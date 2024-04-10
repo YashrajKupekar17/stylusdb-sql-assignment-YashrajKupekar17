@@ -9,6 +9,7 @@ async function createGradesCSV() {
         { student_id: '2', course: 'Chemistry', grade: 'B' },
         { student_id: '3', course: 'Mathematics', grade: 'C' }
     ];
+    fs.writeFileSync('grades.csv', '');
     await writeCSV('grades.csv', initialData);
 }
 
